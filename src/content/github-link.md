@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Github Source
-image: img/callum-shaw-555357-unsplash.jpg
+title: A little about me...
+image: img/steak-beer.jpg
 author: Ghost
 date: 2019-03-10T10:00:00.000Z
 tags:
-  - Source
+  - Bio
 ---
 
 You'll find the source of this blog on GitHub.  

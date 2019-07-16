@@ -23,6 +23,7 @@ export const SiteMain = css`
 export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
+  color: #fbfbfb;
   padding: 0;
   font-size: 3.8rem;
   font-weight: 700;
@@ -33,7 +34,8 @@ export const SiteDescription = styled.h2`
   margin: 0;
   padding: 5px 0;
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 700;
+  color: #45282C;
   letter-spacing: 0.5px;
   opacity: 0.8;
 `;

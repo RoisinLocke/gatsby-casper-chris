@@ -49,10 +49,10 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Ghost',
-  description: 'The professional publishing platform',
-  coverImage: 'img/blog-cover.jpg',
-  logo: 'img/ghost-logo.png',
+  title: "Chris Locke Food",
+  description: "I'm a professional Chef and advocate of local, seasonal produce",
+  coverImage: 'img/hero.jpg',
+  logo: "Hi, I'm Chris Locke",
   lang: 'en',
   siteUrl: 'https://gatsby-casper.netlify.com',
   facebook: 'https://www.facebook.com/ghost',
