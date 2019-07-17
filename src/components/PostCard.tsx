@@ -11,8 +11,6 @@ import { PageContext } from '../templates/post';
 
 const PostCardStyles = css`
   flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   margin: 0 20px 40px;
   min-height: 300px;
@@ -75,6 +73,8 @@ const PostCardTags = styled.span`
 
 const PostCardTitle = styled.h2`
   margin-top: 0;
+  color: #45282C;
+  text-align: center;
 `;
 
 const PostCardExcerpt = styled.section`
@@ -202,7 +202,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       className={`post-card ${post.frontmatter.image ? '' : 'no-image'}`}
       css={PostCardStyles}
     >
-      {post.frontmatter.image && (
+      {/* {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
           <PostCardImage className="post-card-image">
             {post.frontmatter.image &&
@@ -216,18 +216,18 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             )}
           </PostCardImage>
         </Link>
-      )}
+      )} */}
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <header className="post-card-header">
-            {post.frontmatter.tags && <PostCardTags>{post.frontmatter.tags[0]}</PostCardTags>}
+            {/* {post.frontmatter.tags && <PostCardTags>{post.frontmatter.tags[0]}</PostCardTags>} */}
             <PostCardTitle>{post.frontmatter.title}</PostCardTitle>
           </header>
           <PostCardExcerpt>
             <p>{post.excerpt}</p>
           </PostCardExcerpt>
         </Link>
-        <PostCardMeta className="post-card-meta">
+        {/* <PostCardMeta className="post-card-meta">
           <AuthorList>
             <AuthorListItem>
               <AuthorNameTooltip className="author-name-tooltip">
@@ -242,7 +242,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             </AuthorListItem>
           </AuthorList>
           <ReadingTime>{post.timeToRead} min read</ReadingTime>
-        </PostCardMeta>
+        </PostCardMeta> */}
       </PostCardContent>
     </article>
   );

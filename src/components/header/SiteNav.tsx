@@ -65,7 +65,8 @@ const NavStyles = css`
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #45282C;
+    font-weight: 600;
     opacity: 0.8;
   }
 
@@ -90,6 +91,7 @@ const SocialLinks = styled.div`
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  color: #45282C;
   a:last-of-type {
     padding-right: 20px;
   }
@@ -99,7 +101,7 @@ const SubscribeButton = styled.a`
   display: block;
   padding: 4px 10px;
   border: #fff 1px solid;
-  color: #fff;
+  color: #45282C;
   font-size: 1.2rem;
   line-height: 1em;
   border-radius: 10px;
@@ -148,7 +150,13 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
               <Link to="/about">About</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/getting-started/">Getting Started</Link>
+              <Link to="/tags/getting-started/">Blog</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/getting-started/">Gallery</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/getting-started/">Features</Link>
             </li>
           </ul>
         </SiteNavLeft>

@@ -130,10 +130,10 @@ const IndexPage: React.FC<IndexProps> = props => {
         >
           <div css={inner}>
             <SiteHeaderContent>
-              <SiteTitle>
+              {/* <SiteTitle>
                 <h1>Hi, I'm Chris</h1>
               </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
+              <SiteDescription>{config.description}</SiteDescription> */}
             </SiteHeaderContent>
             <SiteNav isHome />
           </div>
